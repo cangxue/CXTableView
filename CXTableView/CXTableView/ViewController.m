@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "CXTableViewController.h"
 
 @interface ViewController ()
 
@@ -24,6 +25,12 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (IBAction)ocClickBtn:(id)sender {
+    CXTableViewController *tableVC = [[CXTableViewController alloc] init];
+    [self.navigationController pushViewController:tableVC animated:YES];
+}
 
+- (IBAction)swiftClickBtn:(id)sender {
+}
 
 @end

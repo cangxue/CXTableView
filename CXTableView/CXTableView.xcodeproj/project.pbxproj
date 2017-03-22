@@ -13,6 +13,8 @@
 		D1936C9C1E8252FC008DA822 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1936C9A1E8252FC008DA822 /* Main.storyboard */; };
 		D1936C9E1E8252FC008DA822 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1936C9D1E8252FC008DA822 /* Assets.xcassets */; };
 		D1936CA11E8252FC008DA822 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1936C9F1E8252FC008DA822 /* LaunchScreen.storyboard */; };
+		D1E946CD1E825481007ABDBB /* CXTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E946CA1E825481007ABDBB /* CXTableViewController.m */; };
+		D1E946CE1E825481007ABDBB /* CXTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E946CC1E825481007ABDBB /* CXTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		D1936C9D1E8252FC008DA822 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1936CA01E8252FC008DA822 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1936CA21E8252FC008DA822 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1E946C91E825481007ABDBB /* CXTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXTableViewController.h; sourceTree = "<group>"; };
+		D1E946CA1E825481007ABDBB /* CXTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXTableViewController.m; sourceTree = "<group>"; };
+		D1E946CB1E825481007ABDBB /* CXTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXTableViewCell.h; sourceTree = "<group>"; };
+		D1E946CC1E825481007ABDBB /* CXTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 		D1936C901E8252FC008DA822 /* CXTableView */ = {
 			isa = PBXGroup;
 			children = (
+				D1E946C81E82545F007ABDBB /* OC-CXTableView */,
 				D1936C941E8252FC008DA822 /* AppDelegate.h */,
 				D1936C951E8252FC008DA822 /* AppDelegate.m */,
 				D1936C971E8252FC008DA822 /* ViewController.h */,
@@ -77,6 +84,17 @@
 				D1936C921E8252FC008DA822 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D1E946C81E82545F007ABDBB /* OC-CXTableView */ = {
+			isa = PBXGroup;
+			children = (
+				D1E946C91E825481007ABDBB /* CXTableViewController.h */,
+				D1E946CA1E825481007ABDBB /* CXTableViewController.m */,
+				D1E946CB1E825481007ABDBB /* CXTableViewCell.h */,
+				D1E946CC1E825481007ABDBB /* CXTableViewCell.m */,
+			);
+			path = "OC-CXTableView";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1E946CD1E825481007ABDBB /* CXTableViewController.m in Sources */,
 				D1936C991E8252FC008DA822 /* ViewController.m in Sources */,
 				D1936C961E8252FC008DA822 /* AppDelegate.m in Sources */,
 				D1936C931E8252FC008DA822 /* main.m in Sources */,
+				D1E946CE1E825481007ABDBB /* CXTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +327,7 @@
 				D1936CA71E8252FC008DA822 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
