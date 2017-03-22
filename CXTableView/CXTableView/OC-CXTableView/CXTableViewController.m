@@ -35,6 +35,8 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.automaticallyAdjustsScrollViewInsets = NO;
     
+    self.title = @"OC-CXTableView";
+    
     [self createUI];
     
     [self createDataArray];

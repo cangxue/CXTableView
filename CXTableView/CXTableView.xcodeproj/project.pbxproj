@@ -15,6 +15,8 @@
 		D1936CA11E8252FC008DA822 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1936C9F1E8252FC008DA822 /* LaunchScreen.storyboard */; };
 		D1E946CD1E825481007ABDBB /* CXTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E946CA1E825481007ABDBB /* CXTableViewController.m */; };
 		D1E946CE1E825481007ABDBB /* CXTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E946CC1E825481007ABDBB /* CXTableViewCell.m */; };
+		D1E946D61E8261AC007ABDBB /* CXSwiftTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E946D51E8261AC007ABDBB /* CXSwiftTableViewController.swift */; };
+		D1E946D81E826758007ABDBB /* CXSwiftTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E946D71E826758007ABDBB /* CXSwiftTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,9 @@
 		D1E946CA1E825481007ABDBB /* CXTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXTableViewController.m; sourceTree = "<group>"; };
 		D1E946CB1E825481007ABDBB /* CXTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXTableViewCell.h; sourceTree = "<group>"; };
 		D1E946CC1E825481007ABDBB /* CXTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXTableViewCell.m; sourceTree = "<group>"; };
+		D1E946D01E825F85007ABDBB /* CXTableView-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CXTableView-Bridging-Header.h"; sourceTree = "<group>"; };
+		D1E946D51E8261AC007ABDBB /* CXSwiftTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CXSwiftTableViewController.swift; sourceTree = "<group>"; };
+		D1E946D71E826758007ABDBB /* CXSwiftTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CXSwiftTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +69,7 @@
 		D1936C901E8252FC008DA822 /* CXTableView */ = {
 			isa = PBXGroup;
 			children = (
+				D1E946CF1E825F74007ABDBB /* Swift-CXTableView */,
 				D1E946C81E82545F007ABDBB /* OC-CXTableView */,
 				D1936C941E8252FC008DA822 /* AppDelegate.h */,
 				D1936C951E8252FC008DA822 /* AppDelegate.m */,
@@ -97,6 +103,16 @@
 			path = "OC-CXTableView";
 			sourceTree = "<group>";
 		};
+		D1E946CF1E825F74007ABDBB /* Swift-CXTableView */ = {
+			isa = PBXGroup;
+			children = (
+				D1E946D51E8261AC007ABDBB /* CXSwiftTableViewController.swift */,
+				D1E946D71E826758007ABDBB /* CXSwiftTableViewCell.swift */,
+				D1E946D01E825F85007ABDBB /* CXTableView-Bridging-Header.h */,
+			);
+			path = "Swift-CXTableView";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -128,6 +144,7 @@
 				TargetAttributes = {
 					D1936C8D1E8252FC008DA822 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -171,7 +188,9 @@
 				D1E946CD1E825481007ABDBB /* CXTableViewController.m in Sources */,
 				D1936C991E8252FC008DA822 /* ViewController.m in Sources */,
 				D1936C961E8252FC008DA822 /* AppDelegate.m in Sources */,
+				D1E946D81E826758007ABDBB /* CXSwiftTableViewCell.swift in Sources */,
 				D1936C931E8252FC008DA822 /* main.m in Sources */,
+				D1E946D61E8261AC007ABDBB /* CXSwiftTableViewController.swift in Sources */,
 				D1E946CE1E825481007ABDBB /* CXTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,10 +309,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CXTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CX.CXTableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CXTableView/Swift-CXTableView/CXTableView-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -301,10 +324,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CXTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CX.CXTableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CXTableView/Swift-CXTableView/CXTableView-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

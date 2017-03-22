@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "CXTableViewController.h"
+//调用Swift类
+#import "CXTableView-Swift.h"
 
 @interface ViewController ()
 
@@ -31,6 +33,8 @@
 }
 
 - (IBAction)swiftClickBtn:(id)sender {
+    CXSwiftTableViewController *swiftVC = [[CXSwiftTableViewController alloc] init];
+    [self.navigationController pushViewController:swiftVC animated:YES];
 }
 
 @end
