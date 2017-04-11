@@ -1,7 +1,6 @@
 # CXTableView
-tableviewcell - edit
 
-实现tableview多选／全选／编辑功能，自定义样式
+分别用OC和Swiftl来实现ableview多选／全选／编辑功能，自定义样式
 
 
 ##全选样式
