@@ -1,14 +1,18 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5EC330B5DC718127746E86EC04A2E09EA30F99C4",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5EC330B5DC718127746E86EC04A2E09EA30F99C4+++FC71369",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "5EC330B5DC718127746E86EC04A2E09EA30F99C4" : 9223372036854775807
+    "5EC330B5DC718127746E86EC04A2E09EA30F99C4+++FC71369" : 0,
+    "5EC330B5DC718127746E86EC04A2E09EA30F99C4+++ADA2498" : 0,
+    "5EC330B5DC718127746E86EC04A2E09EA30F99C4+++D324D7F" : 9223372036854775807
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "49DB7FEF-B1CF-40E6-B4E6-FD93D01E1DF3",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "5EC330B5DC718127746E86EC04A2E09EA30F99C4" : ""
+    "5EC330B5DC718127746E86EC04A2E09EA30F99C4+++FC71369" : "CXTableView\/",
+    "5EC330B5DC718127746E86EC04A2E09EA30F99C4+++ADA2498" : "",
+    "5EC330B5DC718127746E86EC04A2E09EA30F99C4+++D324D7F" : ""
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "CXTableView",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -17,12 +21,17 @@
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/cangxue\/CXTableView",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5EC330B5DC718127746E86EC04A2E09EA30F99C4"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5EC330B5DC718127746E86EC04A2E09EA30F99C4+++ADA2498"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/cangxue\/CXTableView",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5EC330B5DC718127746E86EC04A2E09EA30F99C4"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5EC330B5DC718127746E86EC04A2E09EA30F99C4+++D324D7F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/cangxue\/CXTableView",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5EC330B5DC718127746E86EC04A2E09EA30F99C4+++FC71369"
     }
   ]
 }

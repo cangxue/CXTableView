@@ -12,7 +12,7 @@
 #define SCREENWIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREENHEIGHT [UIScreen mainScreen].bounds.size.height
 
-@interface CXTableViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface CXTableViewController () <UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate>
 
 @property (strong, nonatomic) UITableView *tableView;//列表
 
@@ -55,6 +55,7 @@
     CXTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CellID"];
     
     cell.textLabel.text = _dataArray[indexPath.row];
+    
     return cell;
 }
 
@@ -107,6 +108,7 @@
     _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, SCREENWIDTH, SCREENHEIGHT) style:UITableViewStylePlain];
     _tableView.dataSource = self;
     _tableView.delegate = self;
+    
     [self.view addSubview:_tableView];
     
     [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"CellID"];
@@ -187,6 +189,22 @@
     }
     
     return _deleteArray;
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView;  {
+    if (scrollView == _tableView) {
+        NSIndexPath *tempIndexPath = [NSIndexPath indexPathForRow:5 inSection:1];
+        CGRect rectInTableView = [_tableView rectForRowAtIndexPath:tempIndexPath];
+        CGRect rect = [_tableView convertRect:rectInTableView toView:[_tableView superview]];
+        NSLog(@"================%f",rect.origin.y);
+        
+        if (rect.origin.y < -86 ) {
+            [_tableView scrollToRowAtIndexPath:tempIndexPath atScrollPosition:UITableViewScrollPositionTop animated:YES];
+        }
+    }
+    
+//    CGRect rectInTableView = [scrollView rectForRowAtIndexPath:indexPath];
+    
 }
 
 @end
